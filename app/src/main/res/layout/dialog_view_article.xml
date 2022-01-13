@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dialogCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="@dimen/dimen20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteColor">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:clipToPadding="false"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/listImageCardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen10dp"
+                        card_view:cardBackgroundColor="@color/whiteColor"
+                        card_view:cardCornerRadius="8dp"
+                        card_view:cardElevation="2dp"
+                        card_view:cardMaxElevation="2dp">
+
+                        <ImageView
+                            android:id="@+id/listImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen200dp"
+                            android:background="@color/greyColor"
+                            android:scaleType="centerCrop" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen10dp"
+                        android:layout_marginBottom="@dimen/dimen10dp"
+                        android:padding="@dimen/dimen5dp">
+
+                        <TextView
+                            android:id="@+id/titleLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blackColor"
+                            android:textSize="@dimen/text_18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/authorLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleLabel"
+                            android:layout_marginBottom="@dimen/dimen5dp"
+                            android:textColor="@color/greyColor4"
+                            android:textSize="@dimen/text_12sp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/tagCardView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/authorLabel"
+                            android:layout_margin="@dimen/dimen5dp"
+                            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+                            card_view:cardCornerRadius="8dp"
+                            card_view:cardElevation="2dp"
+                            card_view:cardMaxElevation="2dp">
+
+                            <TextView
+                                android:id="@+id/tagLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/dimen10dp"
+                                android:paddingTop="2dp"
+                                android:paddingEnd="@dimen/dimen10dp"
+                                android:paddingBottom="@dimen/dimen5dp"
+                                android:textColor="@color/whiteColor"
+                                android:textSize="@dimen/text_10sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/descLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tagCardView"
+                            android:textColor="@color/blackColor"
+                            android:textSize="@dimen/text_16sp" />
+
+                        <TextView
+                            android:id="@+id/linkLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/descLabel"
+                            android:layout_marginTop="@dimen/dimen10dp"
+                            android:textSize="@dimen/text_16sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

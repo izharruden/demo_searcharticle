@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingTop="@dimen/dimen20dp">
+
+        <ImageView
+            android:id="@+id/leftIcon"
+            android:layout_width="@dimen/dimen60dp"
+            android:layout_height="@dimen/dimen60dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/dimen10dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_arrow_back_white" />
+
+        <TextView
+            android:id="@+id/centerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/rightIcon"
+            android:layout_width="@dimen/dimen60dp"
+            android:layout_height="@dimen/dimen60dp"
+            android:layout_gravity="end"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/dimen10dp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen20dp"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:layout_marginEnd="@dimen/dimen20dp"
+        android:text="Search"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/text_18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/searchTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen60dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen60dp"
+            android:layout_marginStart="@dimen/dimen20dp"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            android:gravity="start|center"
+            android:text="Search Articles"
+            android:textColor="@color/blackColor"
+            android:textSize="@dimen/text_16sp" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen20dp"
+            android:layout_height="@dimen/dimen20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            android:src="@drawable/ic_search_black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/greyColor" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/allTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen60dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen60dp"
+            android:layout_marginStart="@dimen/dimen20dp"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            android:gravity="start|center"
+            android:text="All Articles"
+            android:textColor="@color/blackColor"
+            android:textSize="@dimen/text_16sp" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen20dp"
+            android:layout_height="@dimen/dimen20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            android:src="@drawable/ic_arrow_right_black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/greyColor" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen20dp"
+        android:layout_marginTop="@dimen/dimen50dp"
+        android:layout_marginEnd="@dimen/dimen20dp"
+        android:text="Popular"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/text_18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/mostViewedTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen60dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen60dp"
+            android:layout_marginStart="@dimen/dimen20dp"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            android:gravity="start|center"
+            android:text="Most viewed"
+            android:textColor="@color/blackColor"
+            android:textSize="@dimen/text_16sp" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen20dp"
+            android:layout_height="@dimen/dimen20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            android:src="@drawable/ic_arrow_right_black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/greyColor" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mostSharedTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen60dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen60dp"
+            android:layout_marginStart="@dimen/dimen20dp"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            android:gravity="start|center"
+            android:text="Most shared"
+            android:textColor="@color/blackColor"
+            android:textSize="@dimen/text_16sp" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen20dp"
+            android:layout_height="@dimen/dimen20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            android:src="@drawable/ic_arrow_right_black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/greyColor" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mostEmailedTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen60dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen60dp"
+            android:layout_marginStart="@dimen/dimen20dp"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            android:gravity="start|center"
+            android:text="Most emailed"
+            android:textColor="@color/blackColor"
+            android:textSize="@dimen/text_16sp" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen20dp"
+            android:layout_height="@dimen/dimen20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen20dp"
+            android:src="@drawable/ic_arrow_right_black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/greyColor" />
+
+    </RelativeLayout>
+</LinearLayout>

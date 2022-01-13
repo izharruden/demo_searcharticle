@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingTop="@dimen/dimen20dp">
+
+        <ImageView
+            android:id="@+id/leftIcon"
+            android:layout_width="@dimen/dimen60dp"
+            android:layout_height="@dimen/dimen60dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/dimen10dp"
+            app:srcCompat="@drawable/ic_arrow_back_white" />
+
+        <TextView
+            android:id="@+id/centerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/rightIcon"
+            android:layout_width="@dimen/dimen60dp"
+            android:layout_height="@dimen/dimen60dp"
+            android:layout_gravity="end"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/dimen10dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/searchFilterFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen50dp"
+        android:layout_marginStart="@dimen/dimen20dp"
+        android:layout_marginEnd="@dimen/dimen20dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen10dp"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:layout_marginEnd="@dimen/dimen10dp"
+            android:background="@drawable/edittext_border">
+
+            <EditText
+                android:id="@+id/searchFilterEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen50dp"
+                android:layout_marginStart="@dimen/dimen50dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                android:background="@null"
+                android:hint="Search keyword"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColor="@color/blackColor"
+                android:textColorHint="@color/greyColor4"
+                android:textSize="@dimen/text_16sp" />
+
+            <ImageView
+                android:id="@+id/searchFilterImageView"
+                android:layout_width="@dimen/dimen40dp"
+                android:layout_height="@dimen/dimen40dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="@dimen/dimen5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="@dimen/dimen10dp"
+                app:srcCompat="@drawable/ic_search_black" />
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchButton"
+        style="@style/AppButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen50dp"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:layout_marginBottom="@dimen/dimen20dp"
+        android:layout_marginStart="@dimen/dimen30dp"
+        android:layout_marginEnd="@dimen/dimen30dp"
+        android:gravity="center"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/text_16sp" />
+
+</LinearLayout>
